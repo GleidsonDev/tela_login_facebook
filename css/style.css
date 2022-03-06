@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #dfeaf5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.esquerda {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.logo img {
+  width: 198px;
+  height: 70px;
+  margin-left: -20px;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+#p-clique {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #606770;
+}
+
+.imagens {
+  display: flex;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.imagens .perfil{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.imagens .add-conta {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 14px;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #4b4f56;
+}
+
+#dois {
+  color: #1877F2;
+}
+
+.direita {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #888888;
+  position: relative;
+}
+
+form input[type]{
+  display: flex;
+  margin: 10px;
+  width: 360px;
+  height: 2rem;
+  background-color: #E8F0FE;
+  border-radius: 5px;
+  border: 1px solid #1877F2;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn-1 {
+  width: 360px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Helvetica, Arial, sans serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-2 {
+  width: 160px;
+  height: 40px;
+  font-family: Helvetica, Arial, sans serif;
+  background-color: #36A420;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#p-senha {
+  font-size: 1.1rem;
+  color: #1877f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1877f2;
+}
+
+#span-final {
+  font-family: Helvetica;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: -45px;
+}
+
+@media screen and (max-width: 1024px) {
+  .esquerda {
+    width: 40%;
+  }
+  
+}
+
+@media screen and (max-width: 780px) {
+  .direita {
+    width: 60%;
+  }
+  .esquerda {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .direita form input, .btn-1 {
+    width: 100%;
+    margin: 5px auto;
+  }
+}
